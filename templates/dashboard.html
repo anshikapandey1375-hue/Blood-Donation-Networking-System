@@ -388,8 +388,7 @@
         card.className = 'emergency-card urgency-' + data.urgency;
         card.id = 'em-' + data.id;
 
-        const currentUserId = {{ user.id }
-    };
+        const currentUserId = {{ user.id }};
     const respondBtn = data.requester_id !== currentUserId
         ? `<button class="btn-respond" onclick="respondEmergency(${data.id}, this)">{{ t('emergency_respond') }}</button>`
         : '';
